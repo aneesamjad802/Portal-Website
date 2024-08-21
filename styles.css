@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../Pictures/src-image.png);
+    height: 1100px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: darkgoldenrod
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: darkmagenta;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.html-bar {
+    width: 90%;
+    background: #ff5722;
+    height: 100%;
+}
+
+.css-bar {
+    width: 85%;
+    background: #2196f3;
+    height: 100%;
+}
+
+.js-bar {
+    width: 75%;
+    background: #fdd835;
+    height: 100%;
+}
+
+.jq-bar {
+    width: 70%;
+    background: #7e57c2;
+    height: 100%;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+/* Background Section */
+#background {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0; /* Light gray background color */
+    text-align: center;
+}
+
+#background h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: #e91e63; /* Accent color */
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Set Background Colors for Other Sections */
+#hero {
+    background-color: #333; /* Dark background for hero section */
+    color: white;
+}
+
+#skills {
+    background-color: #fff; /* White background */
+}
+
+#projects {
+    background-color: #fafafa; /* Light background */
+}
+
+#contact {
+    background-color: #333; /* Dark background for contact section */
+    color: white;
+}
+/* Background Section with Background Image */
+#background {
+    padding: 4rem 2rem;
+    background-image: url('images/background-image.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Optional: Adds a parallax effect */
+    color: white; /* Ensures text is readable against the background */
+    text-align: center;
+    position: relative;
+}
+
+#background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    z-index: 1;
+}
+
+#background h2, 
+#background .timeline-item {
+    position: relative;
+    z-index: 2;
+}
+        #hero{
+            
+        }

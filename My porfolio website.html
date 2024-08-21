@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/Anees%20Amjad/Desktop/vc/vc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSS</title>
+		<link rel="stylesheet" href="./My porfolio website_files/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+          <div class="logo">My Portfolio</div>
+          <ul>
+              <li><a href="file:///C:/Users/Anees%20Amjad/Desktop/vc/vc.html#about">About</a></li>
+              <li><a href="file:///C:/Users/Anees%20Amjad/Desktop/vc/vc.html#skills">Skills</a></li>
+              <li><a href="file:///C:/Users/Anees%20Amjad/Desktop/vc/vc.html#projects">Projects</a></li>
+              <li><a href="file:///C:/Users/Anees%20Amjad/Desktop/vc/vc.html#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section id="hero">
+      <h1>Hello, I'm Anees Amjad</h1>
+      <p>Frontend Web Developer</p>
+      <button class="btn">Hire Me</button>
+  </section>
+<!-- Projects Section -->
+<section id="projects">
+
+  <!-- About Section -->
+  <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a frontend web developer with a passion for creating beautiful and functional websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+          <div class="skill-name">HTML5</div>
+          <div class="skill-bar"><div class="html-bar"></div></div>
+      </div>
+      <div class="skill">
+          <div class="skill-name">CSS3</div>
+          <div class="skill-bar"><div class="css-bar"></div></div>
+      </div>
+      <div class="skill">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div class="js-bar"></div></div>
+      </div>
+      <div class="skill">
+          <div class="skill-name">jQuery</div>
+          <div class="skill-bar"><div class="jq-bar"></div></div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+          <div class="project">
+              <img src="file:///C:/Users/Anees%20Amjad/Desktop/vc/project1.jpg" alt="Project 1">
+              <h3>Project 1</h3>
+              <p>Project description goes here.</p>
+          </div>
+          <div class="project">
+              <img src="file:///C:/Users/Anees%20Amjad/Desktop/vc/project2.jpg" alt="Project 2">
+              <h3>Project 2</h3>
+              <p>Project description goes here.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required="">
+          <input type="email" id="email" placeholder="Your Email" required="">
+          <textarea id="message" rows="4" placeholder="Your Message" required=""></textarea>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <p>© 2024 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="./My porfolio website_files/jquery-3.6.0.min.js.download"></script>
+  <script src="file:///C:/Users/Anees%20Amjad/Desktop/vc/script.js">
+  $(document).ready(function () {
+  // Smooth Scroll
+  $('nav ul li a').click(function (e) {
+      e.preventDefault();
+      const targetSection = $(this).attr('href');
+      $('html, body').animate({
+          scrollTop: $(targetSection).offset().top
+      }, 800);
+  });
+
+  // Contact Form Submission
+  $('#contact-form').submit(function (e) {
+      e.preventDefault();
+      const name = $('#name').val();
+      const email = $('#email').val();
+      const message = $('#message').val();
+
+      if (name && email && message) {
+          alert("Thank you for your message, " + name + "!");
+          $('#contact-form')[0].reset();
+      } else {
+          alert("Please fill out all fields.");
+      }
+  });
+});
+
+  </script>
+
+
+
+
+</section></body></html>
